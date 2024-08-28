@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/full-sun.png" type="image/x-icon">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="typed-top-bar">
+        <p><span class="typing-text"></span></p>
+    </div>
+    <div class="container flex">
+        <!-- search area -->
+        <div class="search-area flex">
+            <input class="search-bar" type="search" placeholder="Enter A City Name" spellcheck="false">
+            <img id="search-icon" src="assets/search.png" alt="search-icon" width="7%">
+        </div>
+
+        <div class="error hidden">
+        </div>
+
+        <!-- weather information -->
+        <div class="weather-info flex hidden">
+            <img class="weather-img" src="assets/clear.png" alt="weather icon" width="40%">
+            <div class="description flex">
+                <h1 class="temperature">25°c</h1>
+                <h2 class="weather-condition">Cloudy</h2>
+                <h2 class="city-name">New York</h2>
+            </div>
+        </div>
+
+            <!-- weather details -->
+        <div class="weather-details flex hidden">
+            <div class="details-card flex">
+                <div class="humidity flex">
+                    <img class="icon" src="assets/humidity.png" alt="humidity-icon">
+                    <p id="humidity">50 %</p>
+                </div>
+                <p>Humidity</p>
+            </div>
+            <div class="details-card right flex">
+                <div class="wind flex">
+                    <img class="icon1" src="assets/wind.png" alt="wind-icon">
+                    <p id="wind-speed">50 km/h</p>
+                </div>
+                <p>Wind Speed</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
